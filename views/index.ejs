@@ -1,0 +1,167 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<div class="stage">
+  <div class="panel">
+    <div class="panel-dots" aria-hidden="true"></div>
+
+    <section class="hero">
+
+      <div class="hero-text">
+        <div class="trust" data-enter="0">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/></svg>Secure</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Honest</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16l5-5 4 4 7-7"/><path d="M15 8h5v5"/></svg>Rewarding</span>
+        </div>
+
+        <h1>
+          <span data-enter="120">Save together.</span>
+          <span data-enter="220">Collect in turn.</span>
+          <span data-enter="320">Reach your goals.</span>
+        </h1>
+
+        <p class="lead" data-enter="460">
+          Run your group contributions without the chasing or the missing pot.
+          Earn up to 30% on your targets, or pool with others.
+        </p>
+
+        <div class="hero-actions">
+          <span class="action" data-enter="580">
+            <a class="btn btn-lime btn-lg" href="#download"><%- include('partials/apple-icon', { size: 20 }) %>Download app</a>
+          </span>
+          <span class="action" data-enter="670">
+            <a class="btn btn-outline btn-lg" href="#savings">See how it works</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-demo">
+        <div class="phone-wrap" data-enter="250" data-rise>
+          <div class="phone-rel">
+
+            <%- include('partials/float', { screen: 0, pos: 'a', delay: 900, tone: 'paid', title: 'Sarah M. paid', sub: 'Week 5 · just now',
+              icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>' }) %>
+            <%- include('partials/float', { screen: 0, pos: 'b', delay: 1500, tone: 'lime', title: 'Your turn in 3 days', sub: 'Market Circle',
+              icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>' }) %>
+            <%- include('partials/float', { screen: 1, pos: 'a', delay: 700, tone: 'plain', title: 'Locked until 1 March', sub: 'Rent Target',
+              icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>' }) %>
+            <%- include('partials/float', { screen: 1, pos: 'b', delay: 1300, tone: 'lime', title: 'Weekly deposit added', sub: '74% of target',
+              icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>' }) %>
+            <%- include('partials/float', { screen: 2, pos: 'a', delay: 1000, tone: 'paid', title: 'Grace A. approved', sub: '2 of 3 approvals',
+              icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>' }) %>
+            <%- include('partials/float', { screen: 2, pos: 'b', delay: 1600, tone: 'lime', title: '12 of 15 contributed', sub: 'Due Friday',
+              icon: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 6.5a3 3 0 0 1 0 5.5"/><path d="M17.5 14.2a5.5 5.5 0 0 1 3 4.8"/></svg>' }) %>
+
+            <div class="bezel">
+              <div class="phone">
+
+                <div class="status" aria-hidden="true">
+                  <span class="status-time">9:41</span>
+                  <span class="notch"></span>
+                  <span class="status-icons">
+                    <svg width="16" height="11" viewBox="0 0 16 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="1"/><rect x="4.3" y="5" width="3" height="6" rx="1"/><rect x="8.6" y="2.5" width="3" height="8.5" rx="1"/><rect x="12.9" y="0" width="3" height="11" rx="1"/></svg>
+                    <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><rect x="0.5" y="0.5" width="20" height="11" rx="3" stroke="currentColor" opacity="0.5"/><rect x="2.5" y="2.5" width="14" height="7" rx="1.5" fill="currentColor"/><rect x="21.5" y="4" width="2" height="4" rx="1" fill="currentColor" opacity="0.5"/></svg>
+                  </span>
+                </div>
+
+                <div class="screen is-active" data-screen="0">
+                  <div class="scr-head">
+                    <div class="scr-title">
+                      <span class="scr-kicker">Group contribution</span>
+                      <span class="scr-name">Market Circle</span>
+                    </div>
+                    <span class="scr-turn">Your turn next</span>
+                  </div>
+                  <div class="scr-card">
+                    <span class="scr-figure">Week <span data-count-week>1</span> of 8</span>
+                    <div class="segs"><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
+                    <span class="scr-note">4 of 8 members paid out</span>
+                  </div>
+                  <span class="scr-label">Payout order</span>
+                  <div class="rows">
+                    <div class="row"><span class="avatar">SM</span><span class="row-name">Sarah M.</span><span class="tag tag-paid">Paid out</span></div>
+                    <div class="rule"></div>
+                    <div class="row"><span class="avatar">DO</span><span class="row-name">David O.</span><span class="tag tag-paid">Paid out</span></div>
+                    <div class="rule"></div>
+                    <div class="row"><span class="avatar avatar-active">FA</span><span class="row-name">Folake A.</span><span class="tag tag-turn">Collects next</span></div>
+                  </div>
+                  <div class="scr-cta">Contribute</div>
+                </div>
+
+                <div class="screen" data-screen="1">
+                  <div class="scr-title">
+                    <span class="scr-kicker">Savings target</span>
+                    <span class="scr-name">Rent Target</span>
+                  </div>
+                  <div class="scr-card">
+                    <span class="scr-figure scr-figure-lg"><span data-count-pct>0</span>%</span>
+                    <div class="track"><div class="fill" data-bar="74"></div></div>
+                    <div class="scr-meta"><span>Weekly</span><span>Locked until 1 March</span></div>
+                  </div>
+                  <span class="scr-label">Other targets</span>
+                  <div class="rows">
+                    <div class="mini">
+                      <div class="mini-head"><span>Wedding Savings</span><span class="muted">48% saved</span></div>
+                      <div class="track track-sm"><div class="fill" data-bar="48"></div></div>
+                    </div>
+                    <div class="mini">
+                      <div class="mini-head"><span>Travel Funds</span><span class="muted">21% saved</span></div>
+                      <div class="track track-sm"><div class="fill" data-bar="21"></div></div>
+                    </div>
+                  </div>
+                  <div class="scr-cta">Add to target</div>
+                </div>
+
+                <div class="screen" data-screen="2">
+                  <div class="scr-title">
+                    <span class="scr-kicker">Joint target</span>
+                    <span class="scr-name">Naming Ceremony Gift</span>
+                  </div>
+                  <div class="scr-card">
+                    <span class="scr-figure"><span data-count-in>0</span> of 15 in</span>
+                    <div class="track"><div class="fill" data-bar="80"></div></div>
+                    <div class="stack">
+                      <span class="avatar avatar-sm">TK</span>
+                      <span class="avatar avatar-sm">JE</span>
+                      <span class="avatar avatar-sm">AB</span>
+                      <span class="avatar avatar-sm">+9</span>
+                      <span class="muted stack-note">Due Friday</span>
+                    </div>
+                  </div>
+                  <span class="scr-label">Release</span>
+                  <div class="rows">
+                    <div class="row row-split"><span class="row-name">Approvals needed</span><span class="tag">2 of 3</span></div>
+                    <div class="rule"></div>
+                    <div class="row row-split"><span class="row-name">Grace A.</span><span class="tag tag-paid">Approved</span></div>
+                    <div class="rule"></div>
+                    <div class="row row-split"><span class="row-name">Michael T.</span><span class="tag tag-paid">Approved</span></div>
+                  </div>
+                  <div class="scr-cta">Contribute</div>
+                </div>
+
+                <span class="home-bar" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs" data-enter="800">
+          <button class="tab is-active" type="button" data-tab="0"><span class="tab-bar"></span>Group contribution</button>
+          <button class="tab" type="button" data-tab="1"><span class="tab-bar"></span>Savings target</button>
+          <button class="tab" type="button" data-tab="2"><span class="tab-bar"></span>Joint target</button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</div>
+
+<%- include('partials/download') %>
+<%- include('partials/savings') %>
+<%- include('partials/security') %>
+<%- include('partials/faq') %>
+<%- include('partials/footer') %>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

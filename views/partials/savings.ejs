@@ -1,0 +1,60 @@
+<section id="savings" class="section" data-reveal>
+  <div class="section-head">
+    <span class="eyebrow" data-r="0">Savings</span>
+    <h2 data-r="100">Three ways to save. One app.</h2>
+  </div>
+
+  <div class="cards">
+    <article class="card card-feature" data-r="240">
+      <div class="card-head">
+        <span class="eyebrow">Group contribution</span>
+        <h3>Save together, collect in turn.</h3>
+        <p>Contribute on a schedule. One member collects each cycle.</p>
+      </div>
+      <div class="card-art">
+        <div class="turn-row"><span class="wk">Wk 3</span><span class="avatar avatar-sm">AB</span><span class="turn-name">Amina B.</span><span class="tag tag-paid">Paid out</span></div>
+        <div class="turn-row"><span class="wk">Wk 4</span><span class="avatar avatar-sm">DO</span><span class="turn-name">David O.</span><span class="tag tag-paid">Paid out</span></div>
+        <div class="turn-row is-you"><span class="wk">Wk 5</span><span class="avatar avatar-sm avatar-active">FA</span><span class="turn-name">Folake A.</span><span class="tag tag-turn">Your turn</span></div>
+        <div class="turn-row"><span class="wk">Wk 6</span><span class="avatar avatar-sm">SM</span><span class="turn-name">Sarah M.</span><span class="tag tag-muted">Upcoming</span></div>
+      </div>
+    </article>
+
+    <article class="card" data-r="360">
+      <div class="card-head">
+        <span class="eyebrow">Savings target</span>
+        <h3>Reach your own goals.</h3>
+        <p>Save toward rent, fees or a trip, and earn interest.</p>
+      </div>
+      <div class="card-art">
+        <div class="target-head">
+          <span class="target-name">Rent Target</span>
+          <span class="target-pct">74%</span>
+        </div>
+        <div class="target-meta">
+          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>1 March</span>
+          <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16l5-5 4 4 7-7"/><path d="M15 8h5v5"/></svg>Earns interest</span>
+        </div>
+        <div class="track"><div class="fill" data-bar="74"></div></div>
+        <div class="scale"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+      </div>
+    </article>
+
+    <article class="card" data-r="480">
+      <div class="card-head">
+        <span class="eyebrow">Joint target</span>
+        <h3>Pool together for one purpose.</h3>
+        <p>Collect with others for a gift, a wedding or an event.</p>
+      </div>
+      <div class="card-art">
+        <div class="dots-grid">
+          <% for (var i = 0; i < 15; i++) { %><span class="<%= i < 12 ? 'in' : '' %>"></span><% } %>
+        </div>
+        <div class="pool-meta">
+          <span class="pool-count">12 of 15</span>
+          <span class="muted">members in · due Friday</span>
+          <span class="tag tag-paid">2 of 3 approved</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

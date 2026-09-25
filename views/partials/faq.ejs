@@ -1,0 +1,21 @@
+<section id="faq" class="section" data-reveal>
+  <div class="section-head">
+    <span class="eyebrow" data-r="0">FAQ</span>
+    <h2 data-r="100">Questions, answered.</h2>
+    <p class="band-body" data-r="200">Can’t find it? <a class="link" href="#contact">Contact support</a></p>
+  </div>
+
+  <div class="faq-list" data-r="260">
+    <% faqs.forEach(function (f, i) { %>
+      <div class="faq-item">
+        <button class="faq-q" type="button" data-faq="<%= i %>" aria-expanded="false" aria-controls="faq-a-<%= i %>">
+          <span><%= f.q %></span>
+          <span class="faq-plus"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </button>
+        <div class="faq-a" id="faq-a-<%= i %>">
+          <div><p><%= f.a %></p></div>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</section>
