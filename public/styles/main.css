@@ -481,3 +481,6 @@ h1 span { display: block; }
 @media (prefers-reduced-motion: reduce) {
   [data-r] { opacity: 1 !important; transform: none !important; }
 }
+
+.store-alt { flex: 1 1 100%; margin: 4px 0 0; font-size: 14px; opacity: .7; }
+.store-alt a { text-decoration: underline; text-underline-offset: 3px; }
