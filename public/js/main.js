@@ -19,6 +19,14 @@
     });
   }
 
+  /* Border appears only once the page has moved */
+  var header = document.querySelector('header.site');
+  if (header) {
+    var onScroll = function () { header.classList.toggle('is-stuck', window.scrollY > 4); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
   /* Mobile drawer */
   var drawer = document.querySelector('[data-drawer]');
   function setMenu(open) {
@@ -98,7 +106,7 @@
   var floats = [].slice.call(document.querySelectorAll('[data-float]'));
   if (!screens.length) return;
 
-  var durations = [6500, 4500, 4500];
+  var durations = [5000, 3500, 3500];
   var timer, raf;
 
   function countTo(el, target) {

@@ -1,0 +1,7 @@
+<%# One download button, with the icon of the visitor's own phone. Desktop keeps the neutral Apple mark. %>
+<a class="btn btn-lime <%= cls %>" href="#download">
+  <% if (os === 'android') { %>
+    <%- include('play-icon', { size: size }) %>
+  <% } else { %>
+    <%- include('apple-icon', { size: size }) %>
+  <% } %>Download app</a>
