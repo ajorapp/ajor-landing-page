@@ -32,9 +32,8 @@ app.use(platform)
 
 app.get('/', limiter, (req, res)=>{
     res.render('index', {
-        title: 'àjọr — save together, reach your goal',
-        description: 'Ajo, esusu and adashe on your phone. Every member sees every kobo, at any time.',
-        faqs,
+        title: 'àjọr — save together, collect in turn, reach your goals',
+        description: 'Run your group contributions without the chasing or the missing pot. Earn upto 20% interest on your targets, or pool with others.', faqs,
     })
 })
 
