@@ -1,12 +1,10 @@
 const path = require('path')
 const express = require('express')
 const morgan = require('morgan')
-const cors = require('cors')
 const helmet = require('helmet')
 const rateLimit = require('express-rate-limit')
 const platform = require('./platform.middleware')
 const faqs = require('./faq.data')
-// const bodyParser = require('body-parser')
 
 const limiter = rateLimit.rateLimit({
 	windowMs: 15 * 60 * 1000, // 15 minutes
@@ -20,14 +18,31 @@ const limiter = rateLimit.rateLimit({
 const app = express()
 
 // views/ and public/ sit at the web root, a level above src/
+// Heroku's router sits in front of us; without this every visitor shares the router's IP
+// and the rate limiter throttles the whole site as one client.
+app.set('trust proxy', 1)
+
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '..', 'views'))
-app.use(express.static(path.join(__dirname, '..', 'public')))
 
-app.use(helmet())
-app.use(cors())
+// Before express.static so CSS/JS responses get the security headers too.
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            // Fonts come from Google Fonts; Helmet's defaults allow any https: source.
+            'style-src': ["'self'", 'https://fonts.googleapis.com'],
+            'font-src': ["'self'", 'https://fonts.gstatic.com'],
+            'frame-ancestors': ["'none'"],
+        },
+    },
+    frameguard: { action: 'deny' },
+}))
+app.use((req, res, next) => {
+    res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=(), usb=()')
+    next()
+})
+app.use(express.static(path.join(__dirname, '..', 'public')))
 app.use(morgan('tiny'))
-app.use(express.json())
 app.use(platform)
 
 app.get('/', limiter, (req, res)=>{

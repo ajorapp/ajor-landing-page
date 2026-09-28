@@ -9,12 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/main.css">
-  <script>
-    // Applied before paint so a dark-mode reload does not flash white.
-    try {
-      var saved = localStorage.getItem('ajor-landing-theme');
-      if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
-    } catch (e) {}
-  </script>
+  <script src="/js/theme.js"></script>
 </head>
 <body>
